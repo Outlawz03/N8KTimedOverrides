@@ -1,0 +1,1904 @@
+<?xml version="1.0"?>
+
+<!--[DocumentInformation]
+Created: 2015-07-13 13:55
+Modified: 2015-09-10 14:18
+-->
+<?tgml version="1.3"?><Tgml ComponentCounter="6" GridSize="10">
+    <Component Clip="False" ContentHeight="20.0" ContentWidth="100.0"
+        Height="20.0" Left="366.0" Name="DprPos" Top="249.0" Width="100.0">
+        <Expose ExposedAttribute="Name" Name="PointName"/>
+        <Group Name="binds">
+            <Bind Bgd="" Force="" Name="AV" PreventDefault="True"
+                value="" valueProp=""/>
+            <Bind Name="OvTim" PreventDefault="True" timeValue=""/>
+            <Bind Description="" Name="DESCR" PreventDefault="True" TitleText=""/>
+            <Bind Name="DftAVPar" PreventDefault="True" value="" valueProp=""/>
+        </Group>
+        <Group Name="display" Visibility="Visible">
+            <Component Clip="False" ContentHeight="20.0"
+                ContentWidth="100.0" Height="20.0" Left="0.0"
+                Name="Value" Top="0.0" Width="100.0">
+                <Rectangle Color="#FFD100" Ctrl="BgdCtrl" Fill="#FFFFFF"
+                    ForceStrokeWidth="2" Height="20.0" Left="0.0"
+                    Model="Bgd" Name="Background" Opacity="1.0"
+                    RadiusX="2.0" RadiusY="2.0" Stroke="#000000"
+                    StrokeDashArray="0.0" StrokeWidth="1.0" Top="0.0" Width="100.0">
+                    <LinearGradient EndPoint="0.0,1.0">
+                        <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                        <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                    </LinearGradient>
+                </Rectangle>
+                <TextBox Ctrl="AnalogValueCtrl" Decimals="1"
+                    FontFamily="Arial" FontSize="15.0"
+                    FontStyle="Normal" FontWeight="Normal" Height="20.0"
+                    HorizontalAlign="Center" Left="0.0" Model="value"
+                    Name="Value" Opacity="1.0" Prefix=""
+                    ShowUnits="true" Stroke="#000000" Suffix=""
+                    TextDecoration="None" Top="0.0"
+                    VerticalAlign="Middle"
+                        Width="100.0"><![CDATA[---]]><Expose
+                        ExposedAttribute="Decimals" Name="Decimals"/>
+                    <Expose ExposedAttribute="ShowUnits" Name="ShowUnits"/>
+                    <Expose ExposedAttribute="Prefix" Name="Prefix"/>
+                    <Expose ExposedAttribute="Suffix" Name="Suffix"/>
+                </TextBox>
+                <TextBox FontFamily="Arial" FontSize="15.0"
+                    FontStyle="Normal" FontWeight="Normal" Height="20.0"
+                    HorizontalAlign="Center" Left="0.0" Opacity="1.0"
+                    Stroke="#000000" TextDecoration="None" Top="-20.0"
+                    VerticalAlign="Middle"
+                        Width="100.0"><![CDATA[DprPos]]><Expose
+                        ExposedAttribute="Content" Name="PointName"/>
+                </TextBox>
+                <TargetArea Height="20.0" Name="Properties"
+                    Width="100.0" properties_up=""/>
+            </Component>
+            <Component Clip="False" ContentHeight="20" ContentWidth="20"
+                Ctrl="ForceCtrl" Height="20.0" Left="0.0" Model="Force"
+                Name="ForcedIcon" Top="0.0" Visibility="Hidden" Width="20.0">
+                <Rectangle Fill="#FFD100" Height="20" RadiusX="5"
+                    RadiusY="5" Stroke="None" Width="20">
+                    <Animate Animation="Stop" Attribute="Fill"
+                        Duration="1" From="#FFD100" Name="aniBlink" To="#01FFFFFF">
+                        <Expose ExposedAttribute="From" Name="ForcedColor"/>
+                    </Animate>
+                    <Expose ExposedAttribute="Fill" Name="ForcedColor"/>
+                </Rectangle>
+                <Component Clip="False" ContentHeight="10.1"
+                    ContentWidth="15.0" Height="10.1" Left="4" Top="5" Width="15.0">
+                    <Path Fill="#E3BC67" Name="B1"
+                        PathData="M11.25,10.096130000000017 C12.980770399999997,10.096130000000017 12.6923101,8.0769000000000233 11.25,8.0769000000000233 11.826920000000001,8.0769000000000233 11.826920000000001,8.0769000000000233 12.403849399999999,8.0769000000000233 13.846150000000002,8.0769000000000233 13.846150000000002,6.0576710000000276 12.403849399999999,6.0576710000000276 12.980770399999997,6.0576710000000276 12.980770399999997,6.0576710000000276 13.557690399999999,6.0576710000000276 15.0,6.0576710000000276 15.0,4.0384409999999775 13.557690399999999,4.0384409999999775 12.980770399999997,4.0384409999999775 12.6923101,4.0384409999999775 12.115386999999998,4.0384409999999775 13.557690399999999,4.0384409999999775 13.557690399999999,2.0192109999999843 12.115386999999998,2.0192109999999843 9.51923,2.0192109999999843 9.51923,2.0192109999999843 7.2115399999999994,2.0192109999999843 8.6538473000000025,2.0192109999999843 8.6538473000000025,-1.900000000887303E-5 7.2115399999999994,-1.900000000887303E-5 5.76923,-1.900000000887303E-5 4.6153800000000018,-1.900000000887303E-5 3.4615399999999994,0.28844099999997752 2.3809600000000017,0.58771999999999025 2.0376899999999978,1.040600999999981 1.1538473000000025,1.7307500000000005 0.725049300000002,2.0655100000000175 0.20812709999999868,2.382092 0.0,2.8845900000000029 0.0,5.1922799999999825 0.0,7.2115099999999757 0.0,9.5192109999999843 0.33908739999999682,10.067859999999996 1.1538473000000025,10.096130000000017 1.7307703999999973,10.096130000000017 4.9038473000000025,10.096130000000017 8.6538473000000025,10.096130000000017 11.25,10.096130000000017 M7.2115399999999994,2.0192109999999843 L5.4807703999999973,2.0192109999999843 M12.115386999999998,4.0384409999999775 L8.3653800000000018,4.0384409999999775 M12.403849399999999,6.0576710000000276 L8.3653800000000018,6.0576710000000276 M11.25,8.0769000000000233 L8.3653800000000018,8.0769000000000233"
+                        Stroke="#505050" StrokeDashArray="0.0" StrokeWidth=".5"/>
+                    <Path Fill="#FFFFFF"
+                        PathData="M11.25,10.096130000000017 C12.9807706,10.096130000000017 12.692310200000001,8.0769000000000233 11.25,8.0769000000000233 11.826920000000001,8.0769000000000233 11.826920000000001,8.0769000000000233 12.403849600000001,8.0769000000000233 13.846150000000002,8.0769000000000233 13.846150000000002,6.0576730000000225 12.403849600000001,6.0576730000000225 12.9807706,6.0576730000000225 12.9807706,6.0576730000000225 13.5576906,6.0576730000000225 15.0,6.0576730000000225 15.0,4.0384429999999725 13.5576906,4.0384429999999725 12.9807706,4.0384429999999725 12.692310200000001,4.0384429999999725 12.115388000000003,4.0384429999999725 13.5576906,4.0384429999999725 13.5576906,2.0192129999999793 12.115388000000003,2.0192129999999793 9.51923,2.0192129999999793 9.51923,2.0192129999999793 7.2115399999999994,2.0192129999999793 8.6538474999999977,2.0192129999999793 8.6538474999999977,-1.7000000013922545E-5 7.2115399999999994,-1.7000000013922545E-5 5.76923,-1.7000000013922545E-5 4.6153800000000018,-1.7000000013922545E-5 3.4615399999999994,0.28844299999997247 2.3809600000000017,0.58771999999999025 2.0376899999999978,1.040602999999976 1.1538474999999977,1.7307500000000005 0.72504949999999724,2.0655100000000175 0.20812730000000101,2.382093999999995 0.0,2.8845900000000029 0.0,5.1922799999999825 0.0,7.2115099999999757 0.0,9.51921299999998 0.33908759999999916,10.067859999999996 1.1538474999999977,10.096130000000017 1.7307705999999996,10.096130000000017 4.9038474999999977,10.096130000000017 8.6538474999999977,10.096130000000017 11.25,10.096130000000017 M7.2115399999999994,2.0192129999999793 L5.4807706,2.0192129999999793 M12.115388000000003,4.0384429999999725 L8.3653800000000018,4.0384429999999725 M12.403849600000001,6.0576730000000225 L8.3653800000000018,6.0576730000000225 M11.25,8.0769000000000233 L8.3653800000000018,8.0769000000000233"
+                        Stroke="#505050" StrokeDashArray="0.0" StrokeWidth=".5">
+                        <LinearGradient Attribute="Fill"
+                            EndPoint="1.0,0.0" SpreadMethod="Pad" StartPoint="0.0,0.0">
+                            <GradientStop Color="#ABFFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#01FFFFFF" Offset="0.5"/>
+                            <GradientStop Color="#60000000" Offset="1.0"/>
+                        </LinearGradient>
+                    </Path>
+                </Component>
+            </Component>
+            <Component Clip="False" ContentHeight="85.0"
+                ContentWidth="330.0" Ctrl="propertiesCtrl" Height="85.0"
+                Left="0.0" Model="properties" Name="Properties"
+                Top="0.0" Visibility="Hidden" Width="330.0">
+                <Rectangle Fill="#7F42B4E6" Height="85.0"
+                    Left="0.00053405120434" Name="Background"
+                    Opacity="1.0" RadiusX="5.0" RadiusY="5.0"
+                    Stroke="None" StrokeDashArray="0.0"
+                    StrokeWidth="1.0" Top="0.0" Width="330.0">
+                    <Expose ExposedAttribute="Fill" Name="Background"/>
+                </Rectangle>
+                <Rectangle Fill="None" Height="20.0" Left="10.0"
+                    Name="TitleShadow" Opacity="1.0" RadiusX="0.0"
+                    RadiusY="0.0" Stroke="None" StrokeDashArray="0.0"
+                    StrokeWidth="1.0" Top="0.0" Width="50.0">
+                    <LinearGradient EndPoint="0.0,1.0">
+                        <GradientStop Color="None" Offset="0.0"/>
+                        <GradientStop Color="#7FFFFFFF" Offset="0.5"/>
+                        <GradientStop Color="None" Offset="1.0"/>
+                    </LinearGradient>
+                </Rectangle>
+                <TextBox FontFamily="Arial" FontSize="10.0"
+                    FontStyle="Normal" FontWeight="Normal" Height="20.0"
+                    HorizontalAlign="Center" Left="10.0" Name="Title"
+                    Opacity="1.0" Stroke="#000000" TextDecoration="None"
+                    Top="0.0" VerticalAlign="Middle" Width="50.0"><![CDATA[Properties]]></TextBox>
+                <Rectangle Fill="#AFFFFFFF" Height="55.0" Left="5.0"
+                    Name="Foreground" Opacity="1.0" RadiusX="0.0"
+                    RadiusY="0.0" Stroke="#626469" StrokeDashArray="0.0"
+                    StrokeWidth="1.0" Top="25.0" Width="320.0"/>
+                <Component Clip="False" ContentHeight="15.0"
+                    ContentWidth="50.0" Height="15.0" Left="270.0"
+                    Name="OKButton" Top="35.0" Width="50.0">
+                    <Rectangle Ctrl="buttonCtrl" Fill="#FFFFFF"
+                        Height="15.0" Left="0.0" Model="ok"
+                        Opacity="1.0" RadiusX="2.0" RadiusY="2.0"
+                        Stroke="#000000" StrokeDashArray="0.0"
+                        StrokeWidth="1.0" Top="0.0" Width="50.0">
+                        <LinearGradient Ctrl="buttonGSCtrl"
+                            EndPoint="0.0,1.0" Model="okGS">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <TextBox FontFamily="Arial" FontSize="10.0"
+                        FontStyle="Normal" FontWeight="Normal"
+                        Height="15.0" HorizontalAlign="Center"
+                        Left="0.0" Opacity="1.0" Stroke="#000000"
+                        TextDecoration="None" Top="0.0"
+                        VerticalAlign="Middle" Width="50.0"><![CDATA[OK]]></TextBox>
+                </Component>
+                <Component Clip="False" ContentHeight="15.0"
+                    ContentWidth="50.0" Height="15.0" Left="270.0"
+                    Name="ReleaseButton" Top="55.0" Width="50.0">
+                    <Rectangle Ctrl="buttonCtrl" Fill="#FFFFFF"
+                        Height="15.0" Left="0.0" Model="release"
+                        Opacity="1.0" RadiusX="2.0" RadiusY="2.0"
+                        Stroke="#000000" StrokeDashArray="0.0"
+                        StrokeWidth="1.0" Top="0.0" Width="50.0">
+                        <LinearGradient Ctrl="buttonGSCtrl"
+                            EndPoint="0.0,1.0" Model="releaseGS">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <TextBox FontFamily="Arial" FontSize="10.0"
+                        FontStyle="Normal" FontWeight="Normal"
+                        Height="15.0" HorizontalAlign="Center"
+                        Left="0.0" Opacity="1.0" Stroke="#000000"
+                        TextDecoration="None" Top="0.0"
+                        VerticalAlign="Middle" Width="50.0"><![CDATA[Release]]></TextBox>
+                </Component>
+                <TextBox FontFamily="Arial" FontSize="10.0"
+                    FontStyle="Normal" FontWeight="Normal" Height="20.0"
+                    HorizontalAlign="Right" Left="5.0" Name="TimeLabel"
+                    Opacity="1.0" Stroke="#000000" TextDecoration="None"
+                    Top="30.0" VerticalAlign="Middle" Width="100.0"><![CDATA[Override Time:]]></TextBox>
+                <TextBox FontFamily="Arial" FontSize="10.0"
+                    FontStyle="Normal" FontWeight="Normal" Height="20.0"
+                    HorizontalAlign="Right" Left="5.0" Name="ValueLabel"
+                    Opacity="1.0" Stroke="#000000" TextDecoration="None"
+                    Top="50.0" VerticalAlign="Middle" Width="100.0"><![CDATA[Value:]]></TextBox>
+                <Component Clip="False" ContentHeight="15.0"
+                    ContentWidth="120.0" Height="15.0" Left="115.0"
+                    Name="Time" Top="35.0" Width="120.0">
+                    <Rectangle Fill="#FFFFFF" Height="15.0" Left="0.0"
+                        Name="Background" Opacity="1.0" RadiusX="2.0"
+                        RadiusY="2.0" Stroke="#000000"
+                        StrokeDashArray="0.0" StrokeWidth="1.0"
+                        Top="0.0" Width="120.0">
+                        <LinearGradient EndPoint="0.0,1.0">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <TextBox Ctrl="TimeValueCtrl" FontFamily="Arial"
+                        FontSize="15.0" FontStyle="Normal"
+                        FontWeight="Normal" Height="15.0"
+                        HorizontalAlign="Center" Increment="15"
+                        Left="15.0" Model="timeValue" Name="Value"
+                        Opacity="1.0" Stroke="#000000"
+                        TextDecoration="None" Top="0.0"
+                        VerticalAlign="Middle"
+                            Width="90.0"><![CDATA[---]]><Expose
+                            ExposedAttribute="Increment" Name="TimeIncrement"/>
+                    </TextBox>
+                    <Rectangle Fill="#FFFFFF" Height="14.0" Left="105.5"
+                        Name="PlusBackground" Opacity="1.0"
+                        RadiusX="2.0" RadiusY="2.0" Stroke="None"
+                        StrokeDashArray="0.0" StrokeWidth="1.0" Top=".5" Width="14.0">
+                        <LinearGradient Ctrl="buttonGSCtrl"
+                            EndPoint="0.0,1.0" Model="timePlusBtn">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <Rectangle Fill="#FFFFFF" Height="14.0" Left="0.5"
+                        Name="MinusBackground" Opacity="1.0"
+                        RadiusX="2.0" RadiusY="2.0" Stroke="None"
+                        StrokeDashArray="0.0" StrokeWidth="1.0"
+                        Top="0.5" Width="14.0">
+                        <LinearGradient Ctrl="buttonGSCtrl"
+                            EndPoint="0.0,1.0" Model="timeMinusBtn">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <Line X1="15.0" X2="15.0" Y2="15.0"/>
+                    <Line X1="105.0" X2="105.0" Y1="0.0" Y2="15.0"/>
+                    <Line Stroke="#626469" StrokeWidth="2.0" X1="112.5"
+                        X2="112.5" Y1="3.0" Y2="12.0"/>
+                    <Line Stroke="#626469" StrokeWidth="2.0" X1="108.0"
+                        X2="117.0" Y1="7.5" Y2="7.5"/>
+                    <Line Stroke="#626469" StrokeWidth="2.0" X1="3.0"
+                        X2="12.0" Y1="7.5" Y2="7.5"/>
+                </Component>
+                <Component Clip="False" ContentHeight="15.0"
+                    ContentWidth="120.0" Height="15.0" Left="115.0"
+                    Name="Value" Top="55.0" Width="120.0">
+                    <Rectangle Fill="#FFFFFF" Height="15.0" Left="0.0"
+                        Name="Background" Opacity="1.0" RadiusX="2.0"
+                        RadiusY="2.0" Stroke="#000000"
+                        StrokeDashArray="0.0" StrokeWidth="1.0"
+                        Top="0.0" Width="120.0">
+                        <LinearGradient EndPoint="0.0,1.0">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <TextBox Ctrl="AnalogValueCtrl" Decimals="1"
+                        FontFamily="Arial" FontSize="15.0"
+                        FontStyle="Normal" FontWeight="Normal"
+                        Height="15.0" HorizontalAlign="Center"
+                        Increment="0.5" Left="15.0" Model="valueProp"
+                        Name="Value" Opacity="1.0" ShowUnits="true"
+                        Stroke="#000000" TextDecoration="None" Top="0.0"
+                        VerticalAlign="Middle"
+                            Width="90.0"><![CDATA[---]]><Expose
+                            ExposedAttribute="Decimals" Name="Decimals"/>
+                        <Expose ExposedAttribute="ShowUnits" Name="ShowUnits"/>
+                        <Expose ExposedAttribute="Prefix" Name="Prefix"/>
+                        <Expose ExposedAttribute="Suffix" Name="Suffix"/>
+                    </TextBox>
+                    <Rectangle Fill="#FFFFFF" Height="14.0" Left="105.5"
+                        Name="PlusBackground" Opacity="1.0"
+                        RadiusX="2.0" RadiusY="2.0" Stroke="None"
+                        StrokeDashArray="0.0" StrokeWidth="1.0"
+                        Top="0.5" Width="14.0">
+                        <LinearGradient Ctrl="buttonGSCtrl"
+                            EndPoint="0.0,1.0" Model="valuePlusBtn">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <Rectangle Fill="#FFFFFF" Height="14.0" Left="0.5"
+                        Name="MinusBackground" Opacity="1.0"
+                        RadiusX="2.0" RadiusY="2.0" Stroke="None"
+                        StrokeDashArray="0.0" StrokeWidth="1.0"
+                        Top="0.5" Width="14.0">
+                        <LinearGradient Ctrl="buttonGSCtrl"
+                            EndPoint="0.0,1.0" Model="valueMinusBtn">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <Line X1="15.0" X2="15.0" Y1="0.0" Y2="15.0"/>
+                    <Line X1="105.0" X2="105.0" Y1="0.0" Y2="15.0"/>
+                    <Line Stroke="#626469" StrokeWidth="2.0" X1="112.5"
+                        X2="112.5" Y1="3.0" Y2="12.0"/>
+                    <Line Stroke="#626469" StrokeWidth="2.0" X1="108.0"
+                        X2="117.0" Y1="7.5" Y2="7.5"/>
+                    <Line Stroke="#626469" StrokeWidth="2.0" X1="3.0"
+                        X2="12.0" Y1="7.5" Y2="7.5"/>
+                </Component>
+                <TextBox Ctrl="TitleCtrl" FontFamily="Arial"
+                    FontSize="15.0" FontStyle="Normal"
+                    FontWeight="Normal" Height="25.0"
+                    HorizontalAlign="Center" Left="0.0"
+                    Model="TitleText" Name="Description" Opacity="1.0"
+                    Stroke="#000000" TextDecoration="None" Top="0.0"
+                    VerticalAlign="Middle" Width="330.0"><![CDATA[Description]]></TextBox>
+                <Rectangle Ctrl="cancelCtrl" Fill="None" Height="20.0"
+                    Left="295.0" Model="cancelBtn" Name="CancelBgd"
+                    Stroke="None" Width="30.0"/>
+                <Component Clip="False" ContentHeight="20.0"
+                    ContentWidth="30.0" Height="20.0" Left="295.0"
+                    Name="Cancel" Top="0.0" Width="30.0">
+                    <Line Ctrl="cancelLineCtrl" Model="cancelLine1"
+                        Opacity="1.0" Stroke="#626469"
+                        StrokeDashArray="0.0" StrokeWidth="2.0"
+                        X1="10.0" X2="20.0" Y1="6.0" Y2="14.0"/>
+                    <Line Ctrl="cancelLineCtrl" Model="cancelLine2"
+                        Opacity="1.0" Stroke="#626469"
+                        StrokeDashArray="0.0" StrokeWidth="2.0"
+                        X1="10.0" X2="20.0" Y1="14.0" Y2="6.0"/>
+                </Component>
+                <TargetArea Height="25.0" Name="Header" Width="330.0"
+                    properties_down="" properties_move="" properties_up=""/>
+                <TargetArea Height="15.0" Left="270.0" Name="OK"
+                    Top="35.0" Width="50.0" okGS_down="" okGS_out=""
+                    okGS_up="" properties_up=""/>
+                <TargetArea Height="15.0" Left="270.0" Name="Release"
+                    Top="55.0" Width="50.0" constantBgd_up=""
+                    infinity_up="" releaseGS_down="" releaseGS_out=""
+                    releaseGS_up="" release_up=""/>
+                <TargetArea Height="20.0" Left="295.0" Name="Cancel"
+                    Top="0.0" Width="30.0" cancelBtn_out=""
+                    cancelBtn_over="" cancelLine1_out=""
+                    cancelLine1_over="" cancelLine2_out=""
+                    cancelLine2_over="" properties_up=""/>
+                <TargetArea Height="15.0" Left="220.0" Name="TimeUp"
+                    Top="35.0" Width="15.0" timePlusBtn_down=""
+                    timePlusBtn_out="" timePlusBtn_up="" timeValue_up=""/>
+                <TargetArea Height="15.0" Left="115.0" Name="TimeDown"
+                    Top="35.0" Width="15.0" timeMinusBtn_down=""
+                    timeMinusBtn_out="" timeMinusBtn_up="" timeValue_up=""/>
+                <TargetArea Height="15.0" Left="130.0" Name="OvTim"
+                    Top="35.0" Width="90.0" timeValue_up=""/>
+                <TargetArea Height="15.0" Left="130.0" Name="AV"
+                    Top="55.0" Width="90.0" valueProp_up=""/>
+                <TargetArea Height="15.0" Left="220.0" Name="ValueUp"
+                    Top="55.0" Width="15.0" valuePlueBtn_out=""
+                    valuePlusBtn_down="" valuePlusBtn_up=""
+                    valueProp_up="" value_up=""/>
+                <TargetArea Height="15.0" Left="115.0" Name="ValueDown"
+                    Top="55.0" Width="15.0" valueMinusBtn_down=""
+                    valueMinusBtn_out="" valueMinusBtn_up=""
+                    valueProp_up="" value_up=""/>
+            </Component>
+        </Group>
+        <Script OnDocumentLoad="load" OnMouseClick="click"
+            OnMouseDown="down" OnMouseMove="move" OnMouseOut="out"
+            OnMouseOver="over" OnMouseUp="up" OnSignalChange="change"><![CDATA[/**==========================================================================================
+ * Main Object
+ * This is a consolidated event distributor
+ */
+var Main = {
+	// load function this executes when the component is loaded
+	load: function(e) {
+		var comp = e.getCurrentTarget(),
+			children = getChildrenByAttribute(comp, "Model"); // list of all components with the attribute Model
+		
+		// create all models that are found and tie them to the associated control object
+		this.models = {};
+		for(var i = 0, max = children.length; i < max; i += 1) {
+			var child = children[i],
+				model = child.getAttribute("Model"),
+				ctrl = String(child.getAttribute("Ctrl"));
+			this.models[model] = Object.create(eval(ctrl));
+			this.models[model].init(child);							
+		}
+	},
+	
+	// on a change evnet distribute the event to all models defined in custom attributes
+	change: function(e) {
+		e.preventDefault();
+		var attbList = e.getTarget().attributes;
+		
+		for(var i = 0, max = attbList.length; i < max; i += 1) {
+			var attb = attbList.item(i).nodeName;
+			if(this.models.hasOwnProperty(attb)) {
+				this.models[attb].update(e);
+			}
+		}
+	},
+	
+	mouse: function(e, action) {
+		if(action === "click" || action === "down") {
+			e.preventDefault();
+		}	
+		var trigger = e.getTarget(),
+		attbList = trigger.attributes;
+	
+		for(var i = 0, max = attbList.length; i < max; i += 1) {
+			var attb = String(attbList.item(i).nodeName).split("_")[0],
+				event = String(attbList.item(i).nodeName).split("_")[1];
+			if(event === action) {
+				if(this.models.hasOwnProperty(attb)) {
+					if(!isUndefined(this.models[attb][action])) {
+						this.models[attb][action](e);
+					}
+				}
+			}
+		}
+	}
+};
+
+var bm = {
+	change: function(e) {
+		var target = e.getTarget();
+		var name = target.getAttribute("Name");
+		if(!this.hasOwnProperty(name)) {
+			this[name] = Object.create(Bind);
+			this[name].init(target);
+		}
+	}
+};
+
+/**==========================================================================================
+ * Event Callback Functions
+ * pass all events to main object for distribution
+ */
+
+function load(evt){	
+	Main.load(evt);
+}
+
+function change(evt) {	
+	Main.change(evt);
+	bm.change(evt);
+}
+
+function click(evt) {
+	Main.mouse(evt, "click");
+}
+
+function up(evt) {
+	Main.mouse(evt, "up");
+}
+
+function over(evt) {
+	Main.mouse(evt, "over");
+}
+
+function out(evt) {
+	Main.mouse(evt, "out");
+}
+
+function down(evt) {
+	Main.mouse(evt, "down");
+}
+
+function move(evt) {
+	Main.mouse(evt, "move");
+}
+
+/**==========================================================================================
+ * Helper Functions
+ */
+var isUndefined = function(o) {
+	if(typeof(o) === "undefined") {
+		return true;			
+	}
+	return false;	
+};
+
+var getBool = function(s) {
+	switch(String(s).toLowerCase().trim()){
+		case "true": case "yes": case "y": case "1": case "t": case "on": case "active": return true;
+		default: return false;
+	}
+};
+
+//checks if object is of type undefined
+if (!Object.isUndefined) {
+	Object.isUndefined = function(object) {
+		return typeof object === "undefined";
+	};
+}
+
+//checks if object is part of DOM, should only be used on nodes (good to check against CDATA)
+if (!Object.isDOM) {
+	Object.isDOM = function(obj) {
+		if (!Object.isUndefined(obj) && obj.nodeName) {
+	    	switch (obj.nodeType) {
+	    		case 1: return 'element';
+	    		case 3: return (/\S/).test(obj.nodeValue) ? 'textnode' : 'whitespace';
+	    	}
+	    }
+	    return false;
+	};
+}
+
+//returns an array children nodes that have a defined attribute, ex: getChildrenByAttribute(view,"Model")
+var getChildrenByAttribute = function(node, attb){
+	var v = [];
+	if (Object.isDOM(node)) {
+		if (node.hasAttribute(attb)) {
+			if (node.getAttribute(attb)!="") {			
+				v.push(node);
+			}
+		}
+		if (node.hasChildNodes()) {
+			var c = node.getChildNodes();			
+			for(var i = 0; i < c.length; i++) {
+				v = v.concat(getChildrenByAttribute(c.item(i), attb));
+			}
+		}
+	}
+	return v;
+}
+
+if (!Object.create) {
+	Object.create = function(base) {
+		function F () {};
+		F.prototype = base;
+		return new F();
+	};
+}
+ 
+
+/**==========================================================================================
+ * Analog Control
+ */
+var AnalogValueCtrl = {
+	init: function(node) {
+		this.decimals = 0;
+		this.units = "";
+		this.prefix = "";
+		this.suffix = "";
+		this.showUnits = true;
+		this.value = 0;
+		this.increment = 0.5;
+		
+		this.node = node;
+		
+		if(node.hasAttribute("Decimals")) {		
+			this.decimals = +node.getAttribute("Decimals");
+		}
+					
+		if(node.hasAttribute("Prefix")) {		
+			this.prefix = String(node.getAttribute("Prefix"));
+		}
+		
+		if(node.hasAttribute("Suffix")) {		
+			this.suffix = String(node.getAttribute("Suffix"));
+		}
+		
+		if(node.hasAttribute("ShowUnits")) {		
+			this.showUnits = getBool(node.getAttribute("ShowUnits"));
+		}
+		
+		if(node.hasAttribute("Increment")) {		
+			this.increment = +node.getAttribute("Increment");
+		}
+		
+		this.naValue = 20000;
+		this.units = "";
+	},
+	update: function(e) {		
+		var targetName = String(e.getTarget().getAttribute("Name"));
+
+		if(targetName === "DftAVPar") {
+			this.naValue = +e.getValue();
+		}
+		
+		if(targetName === "AV") {
+			this.value = +e.getValue();
+			this.units = String(e.getUnit());
+		}
+		
+		this.render();
+	},
+	
+	up: function(e) {
+		var targetName = String(e.getTarget().getAttribute("Name"));
+		if(targetName === "AV") {
+			if(!this.constant && bm.hasOwnProperty("AV")) {
+				bm["AV"].displayProperties();
+			}
+		}
+		
+		if(targetName === "ValueUp") {
+			if(bm.hasOwnProperty("AV")) {
+				this.value += this.increment;
+				bm["AV"].write(this.value);
+				this.render();
+			}
+		}
+		if(targetName === "ValueDown") {
+			if(bm.hasOwnProperty("AV")) {
+				this.value = Math.max(this.value - this.increment, 0);
+				bm["AV"].write(this.value);
+				this.render();
+			}
+		}
+	},
+	
+	render: function() {
+		if(this.value !== this.naValue) {	
+			this.node.setAttribute("Content", this.prefix + this.value.toFixed(this.decimals) + this.suffix + (this.showUnits ? " " + this.units : ""));
+		} else {
+			this.node.setAttribute("Content", "NA");
+		}
+	}
+};
+
+/**==========================================================================================
+ * Time Control
+ */
+var TimeValueCtrl = {
+	init: function(node) {
+		this.value = 0;
+		
+		this.node = node;
+		this.increment = 15;
+		
+		if(node.hasAttribute("Increment")) {		
+			this.increment = +node.getAttribute("Increment");
+		}
+	},
+	update: function(e) {
+		this.value = +e.getValue();
+		this.render();
+	},
+	
+	up: function(e) {
+		var targetName = String(e.getTarget().getAttribute("Name"));
+		if(targetName === "OvTim") {
+			if(bm.hasOwnProperty(targetName)) {
+				bm[targetName].displayProperties();
+			}
+		}
+		if(targetName === "TimeUp") {
+			if(bm.hasOwnProperty("OvTim")) {
+				this.value += this.increment;
+				bm["OvTim"].write(this.value);
+				this.render();
+			}
+		}
+		if(targetName === "TimeDown") {
+			if(bm.hasOwnProperty("OvTim")) {
+				this.value = Math.max(this.value - this.increment, 0);
+				bm["OvTim"].write(this.value);
+				this.render();
+			}
+		}
+	},
+	
+	render: function(e) {
+		var min = Math.floor(this.value);
+		var decValue = this.value % 1;
+		var sec = Math.floor(decValue * 60);
+		if(sec < 10) {
+			sec = "0" + sec;
+		}
+		this.node.setAttribute("Content", min + ":" + sec + " min");
+	},
+};
+
+
+/**==========================================================================================
+ * Text Control
+ */
+var TextCtrl = {
+	init: function(node) {
+		this.node = node;		
+	},
+	update: function(e) {
+		this.node.setAttribute("Content", String(e.getValue()));
+	}
+};
+
+/**==========================================================================================
+ * Forced Icon Control
+ */
+var ForceCtrl = {
+	init: function(node) {
+		this.node = node;		
+	},
+	update: function(e) {
+		var sts = +e.getStatus();
+		this.node.setAttribute("Visibility", sts === 3 ? "Visible" : "Hidden");
+	}
+};
+
+/**==========================================================================================
+ * Background Control
+ */
+var BgdCtrl = {
+	init: function(node) {
+		this.node = node;
+		this.normalStroke = this.node.getAttribute("Stroke");
+		this.normalStrokeWidth = this.node.getAttribute("StrokeWidth");				
+		this.forcedStroke = this.node.getAttribute("Color");
+		this.forcedStrokeWidth = this.node.getAttribute("ForceStrokeWidth");
+	},
+	update: function(e) {
+		var sts = +e.getStatus();
+		this.node.setAttribute("Stroke", sts === 3 ? this.forcedStroke : this.normalStroke);
+		this.node.setAttribute("StrokeWidth", sts === 3 ? this.forcedStrokeWidth : this.normalStrokeWidth);
+	}
+};
+
+/**==========================================================================================
+ * Title Control
+ */
+var TitleCtrl = {
+	init: function(node) {
+		this.node = node;		
+		this.name = node.getParentNode().getParentNode().getParentNode().getAttribute("Name");
+	},
+	update: function(e) {
+		var content = this.name;
+		var value = String(e.getValue());
+		if(value !== "") {
+			content = value + " : " + content;
+		}
+		this.node.setAttribute("Content", content);		
+	}
+};
+
+/**==========================================================================================
+ * Button Control
+ */
+var buttonCtrl = {
+	init: function(node) {
+	},
+	
+	up: function(e) {
+		var targetName = String(e.getTarget().getAttribute("Name"));
+		if(targetName === "Release") {
+			if(bm.hasOwnProperty("AV")) {
+				bm["AV"].unForce();
+			}
+		}
+	}
+};
+
+/**==========================================================================================
+ * Button Gradient Control
+ */
+var buttonGSCtrl = {
+	init: function(node) {
+		var gsList = node.getElementsByTagName("GradientStop");
+		this.gs0 = gsList.item(0);
+		this.gs0Color = String(this.gs0.getAttribute("Color"));
+		this.gs1 = gsList.item(1);
+		this.gs1Color = String(this.gs1.getAttribute("Color"));
+	},
+	
+	up: function(e) {
+		this.gs0.setAttribute("Color", this.gs0Color);
+		this.gs1.setAttribute("Color", this.gs1Color);
+	},
+	
+	down: function(e) {
+		this.gs0.setAttribute("Color", this.gs1Color);
+		this.gs1.setAttribute("Color", this.gs0Color);
+	},
+	
+	out: function(e) {
+		this.gs0.setAttribute("Color", this.gs0Color);
+		this.gs1.setAttribute("Color", this.gs1Color);
+	}
+};
+
+/**==========================================================================================
+ * Cancel Control
+ */
+var cancelCtrl = {
+	init: function(node) {
+		this.node = node;
+	},
+	
+	over: function(e) {
+		this.node.setAttribute("Fill", "#E00000");
+	},
+	
+	out: function(e) {
+		this.node.setAttribute("Fill", "None");
+	}
+};
+
+/**==========================================================================================
+ * Cancel Line Control
+ */
+var cancelLineCtrl = {
+	init: function(node) {
+		this.node = node;
+	},
+	
+	over: function(e) {
+		this.node.setAttribute("Stroke", "#FFFFFF");
+	},
+	
+	out: function(e) {
+		this.node.setAttribute("Stroke", "#626469");
+	}
+};
+
+/**==========================================================================================
+ * Properties Control
+ */
+var propertiesCtrl = {
+	init: function(node) {
+		this.node = node;
+		this.drag = false;
+		this.oldX = 0;
+		this.oldY = 0;
+		this.top = 0;
+		this.left = 0;
+	},
+	up: function(e) {
+		var targetName = String(e.getTarget().getAttribute("Name"));
+		
+		switch(targetName) {
+		case "Properties":
+			this.node.setAttribute("Visibility", "Visible");
+			this.left = +e.getCurrentTargetX();
+			this.top = +e.getCurrentTargetY();
+			this.node.setAttribute("Left", this.left);
+			this.node.setAttribute("Top", this.top);
+			break;
+		case "Header":
+			this.drag = false;
+			break;
+		case "OK":
+		case "Cancel":
+		case "Release":
+			this.node.setAttribute("Visibility", "Hidden");
+			break;
+		default:
+		}
+	},
+	move: function(e) {
+		if(this.drag === true) {
+			var xPos = +e.getCurrentTargetX();
+			var yPos = +e.getCurrentTargetY();
+			this.left = this.left + (xPos - this.oldX);
+			this.top = this.top + (yPos - this.oldY);
+			this.node.setAttribute("Left", this.left);
+			this.node.setAttribute("Top", this.top);
+			this.oldX = xPos;
+			this.oldY = yPos;
+		}
+		
+	},
+	down: function(e) {
+		this.drag = true;
+		this.oldX = +e.getCurrentTargetX();
+		this.oldY = +e.getCurrentTargetY();
+		this.left = +this.node.getAttribute("Left");
+		this.top = +this.node.getAttribute("Top");
+	}
+};
+
+/**==========================================================================================
+ * Bind Object
+ */
+var Bind = {
+	init: function(node) {
+		this.node = node;
+		if(this.node) {
+			this.fbn = this.node.getFullBindName();
+			this.name = String(this.node.getAttribute("Name"));
+		}
+	},
+	enableUpdates: function(){
+		try {
+			if(this.node) {
+				this.node.setAttribute("DynamicUpdates", "Enable");
+			}
+		}
+		catch(err) {
+		}
+	},
+	disableUpdates: function() {
+		try {
+			if(this.node) {
+				this.node.setAttribute("DynamicUpdates", "Disable");
+			}
+		}
+		catch(err) {
+		}
+	},
+	displayProperties: function() {
+		if(this.fbn) {
+			invoke(this.fbn,"EditProperties");
+		}
+	},
+	relinquish: function() {
+		try {
+			if(this.fbn) {
+				setValue(this.fbn,null);	
+			}
+		}
+		catch(err) {
+		}
+	},
+	write: function(val) {
+		try {
+			if(this.fbn) {
+				setValue(this.fbn, val);
+			}
+		}
+		catch(err) {
+		}
+	},
+	unForce: function() {
+		setForce(this.fbn, false);
+	}
+};]]></Script>
+    </Component>
+    <Component Clip="False" ContentHeight="20.0" ContentWidth="100.0"
+        Height="20.0" Left="247.0" Name="FanSts" Top="334.0" Width="100.0">
+        <Expose ExposedAttribute="Name" Name="PointName"/>
+        <Group Name="binds">
+            <Bind Bgd="" Force="" Name="DV" PreventDefault="True"
+                value="" valueProp=""/>
+            <Bind Name="OvTim" PreventDefault="True" timeValue=""/>
+            <Bind Description="" Name="DESCR" PreventDefault="True" TitleText=""/>
+        </Group>
+        <Group Name="display" Visibility="Visible">
+            <Component Clip="False" ContentHeight="20.0"
+                ContentWidth="100.0" Height="20.0" Left="0.0"
+                Name="Value" Top="0.0" Width="100.0">
+                <Rectangle Color="#FFD100" Ctrl="BgdCtrl" Fill="#FFFFFF"
+                    ForceStrokeWidth="2" Height="20.0" Left="0.0"
+                    Model="Bgd" Name="Background" Opacity="1.0"
+                    RadiusX="2.0" RadiusY="2.0" Stroke="#000000"
+                    StrokeDashArray="0.0" StrokeWidth="1.0" Top="0.0" Width="100.0">
+                    <LinearGradient EndPoint="0.0,1.0">
+                        <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                        <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                    </LinearGradient>
+                    <Expose ExposedAttribute="Color" Name="ForceColor"/>
+                </Rectangle>
+                <TextBox Ctrl="DigitalValueCtrl" FontFamily="Arial"
+                    FontSize="15.0" FontStyle="Normal"
+                    FontWeight="Normal" Height="20.0"
+                    HorizontalAlign="Center" Left="0.0" Model="value"
+                    Name="Value" Opacity="1.0" State0="Off" State1="On"
+                    Stroke="#000000" TextDecoration="None" Top="0.0"
+                    VerticalAlign="Middle"
+                        Width="100.0"><![CDATA[---]]><Expose
+                        ExposedAttribute="State0" Name="State0"/>
+                    <Expose ExposedAttribute="State1" Name="State1"/>
+                </TextBox>
+                <TextBox FontFamily="Arial" FontSize="15.0"
+                    FontStyle="Normal" FontWeight="Normal" Height="20.0"
+                    HorizontalAlign="Center" Left="0.0" Opacity="1.0"
+                    Stroke="#000000" TextDecoration="None" Top="-20.0"
+                    VerticalAlign="Middle"
+                        Width="100.0"><![CDATA[FanSts]]><Expose
+                        ExposedAttribute="Content" Name="PointName"/>
+                </TextBox>
+                <TargetArea Height="20.0" Name="Properties"
+                    Width="100.0" properties_up=""/>
+            </Component>
+            <Component Clip="False" ContentHeight="20" ContentWidth="20"
+                Ctrl="ForceCtrl" Height="20.0" Left="0.0" Model="Force"
+                Name="ForcedIcon" Top="0.0" Visibility="Hidden" Width="20.0">
+                <Rectangle Fill="#FFD100" Height="20" RadiusX="5"
+                    RadiusY="5" Stroke="None" Width="20">
+                    <Animate Animation="Stop" Attribute="Fill"
+                        Duration="1" From="#FFD100" Name="aniBlink" To="#01FFFFFF">
+                        <Expose ExposedAttribute="From" Name="ForcedColor"/>
+                    </Animate>
+                    <Expose ExposedAttribute="Fill" Name="ForcedColor"/>
+                </Rectangle>
+                <Component Clip="False" ContentHeight="10.1"
+                    ContentWidth="15.0" Height="10.1" Left="4" Top="5" Width="15.0">
+                    <Path Fill="#E3BC67" Name="B1"
+                        PathData="M11.25,10.096130000000017 C12.980770399999997,10.096130000000017 12.6923101,8.0769000000000233 11.25,8.0769000000000233 11.826920000000001,8.0769000000000233 11.826920000000001,8.0769000000000233 12.403849399999999,8.0769000000000233 13.846150000000002,8.0769000000000233 13.846150000000002,6.0576710000000276 12.403849399999999,6.0576710000000276 12.980770399999997,6.0576710000000276 12.980770399999997,6.0576710000000276 13.557690399999999,6.0576710000000276 15.0,6.0576710000000276 15.0,4.0384409999999775 13.557690399999999,4.0384409999999775 12.980770399999997,4.0384409999999775 12.6923101,4.0384409999999775 12.115386999999998,4.0384409999999775 13.557690399999999,4.0384409999999775 13.557690399999999,2.0192109999999843 12.115386999999998,2.0192109999999843 9.51923,2.0192109999999843 9.51923,2.0192109999999843 7.2115399999999994,2.0192109999999843 8.6538473000000025,2.0192109999999843 8.6538473000000025,-1.900000000887303E-5 7.2115399999999994,-1.900000000887303E-5 5.76923,-1.900000000887303E-5 4.6153800000000018,-1.900000000887303E-5 3.4615399999999994,0.28844099999997752 2.3809600000000017,0.58771999999999025 2.0376899999999978,1.040600999999981 1.1538473000000025,1.7307500000000005 0.725049300000002,2.0655100000000175 0.20812709999999868,2.382092 0.0,2.8845900000000029 0.0,5.1922799999999825 0.0,7.2115099999999757 0.0,9.5192109999999843 0.33908739999999682,10.067859999999996 1.1538473000000025,10.096130000000017 1.7307703999999973,10.096130000000017 4.9038473000000025,10.096130000000017 8.6538473000000025,10.096130000000017 11.25,10.096130000000017 M7.2115399999999994,2.0192109999999843 L5.4807703999999973,2.0192109999999843 M12.115386999999998,4.0384409999999775 L8.3653800000000018,4.0384409999999775 M12.403849399999999,6.0576710000000276 L8.3653800000000018,6.0576710000000276 M11.25,8.0769000000000233 L8.3653800000000018,8.0769000000000233"
+                        Stroke="#505050" StrokeDashArray="0.0" StrokeWidth=".5"/>
+                    <Path Fill="#FFFFFF"
+                        PathData="M11.25,10.096130000000017 C12.9807706,10.096130000000017 12.692310200000001,8.0769000000000233 11.25,8.0769000000000233 11.826920000000001,8.0769000000000233 11.826920000000001,8.0769000000000233 12.403849600000001,8.0769000000000233 13.846150000000002,8.0769000000000233 13.846150000000002,6.0576730000000225 12.403849600000001,6.0576730000000225 12.9807706,6.0576730000000225 12.9807706,6.0576730000000225 13.5576906,6.0576730000000225 15.0,6.0576730000000225 15.0,4.0384429999999725 13.5576906,4.0384429999999725 12.9807706,4.0384429999999725 12.692310200000001,4.0384429999999725 12.115388000000003,4.0384429999999725 13.5576906,4.0384429999999725 13.5576906,2.0192129999999793 12.115388000000003,2.0192129999999793 9.51923,2.0192129999999793 9.51923,2.0192129999999793 7.2115399999999994,2.0192129999999793 8.6538474999999977,2.0192129999999793 8.6538474999999977,-1.7000000013922545E-5 7.2115399999999994,-1.7000000013922545E-5 5.76923,-1.7000000013922545E-5 4.6153800000000018,-1.7000000013922545E-5 3.4615399999999994,0.28844299999997247 2.3809600000000017,0.58771999999999025 2.0376899999999978,1.040602999999976 1.1538474999999977,1.7307500000000005 0.72504949999999724,2.0655100000000175 0.20812730000000101,2.382093999999995 0.0,2.8845900000000029 0.0,5.1922799999999825 0.0,7.2115099999999757 0.0,9.51921299999998 0.33908759999999916,10.067859999999996 1.1538474999999977,10.096130000000017 1.7307705999999996,10.096130000000017 4.9038474999999977,10.096130000000017 8.6538474999999977,10.096130000000017 11.25,10.096130000000017 M7.2115399999999994,2.0192129999999793 L5.4807706,2.0192129999999793 M12.115388000000003,4.0384429999999725 L8.3653800000000018,4.0384429999999725 M12.403849600000001,6.0576730000000225 L8.3653800000000018,6.0576730000000225 M11.25,8.0769000000000233 L8.3653800000000018,8.0769000000000233"
+                        Stroke="#505050" StrokeDashArray="0.0" StrokeWidth=".5">
+                        <LinearGradient Attribute="Fill"
+                            EndPoint="1.0,0.0" SpreadMethod="Pad" StartPoint="0.0,0.0">
+                            <GradientStop Color="#ABFFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#01FFFFFF" Offset="0.5"/>
+                            <GradientStop Color="#60000000" Offset="1.0"/>
+                        </LinearGradient>
+                    </Path>
+                </Component>
+            </Component>
+            <Component Clip="False" ContentHeight="85.0"
+                ContentWidth="330.0" Ctrl="propertiesCtrl" Height="85.0"
+                Left="0.0" Model="properties" Name="Properties"
+                Top="0.0" Visibility="Hidden" Width="330.0">
+                <Rectangle Fill="#7F42B4E6" Height="85.0"
+                    Left="0.00053405120434" Name="Background"
+                    Opacity="1.0" RadiusX="5.0" RadiusY="5.0"
+                    Stroke="None" StrokeDashArray="0.0"
+                    StrokeWidth="1.0" Top="0.0" Width="330.0">
+                    <Expose ExposedAttribute="Fill" Name="Background"/>
+                </Rectangle>
+                <Rectangle Fill="None" Height="20.0" Left="10.0"
+                    Name="TitleShadow" Opacity="1.0" RadiusX="0.0"
+                    RadiusY="0.0" Stroke="None" StrokeDashArray="0.0"
+                    StrokeWidth="1.0" Top="0.0" Width="50.0">
+                    <LinearGradient EndPoint="0.0,1.0">
+                        <GradientStop Color="None" Offset="0.0"/>
+                        <GradientStop Color="#7FFFFFFF" Offset="0.5"/>
+                        <GradientStop Color="None" Offset="1.0"/>
+                    </LinearGradient>
+                </Rectangle>
+                <TextBox FontFamily="Arial" FontSize="10.0"
+                    FontStyle="Normal" FontWeight="Normal" Height="20.0"
+                    HorizontalAlign="Center" Left="10.0" Name="Title"
+                    Opacity="1.0" Stroke="#000000" TextDecoration="None"
+                    Top="0.0" VerticalAlign="Middle" Width="50.0"><![CDATA[Properties]]></TextBox>
+                <Rectangle Fill="#AFFFFFFF" Height="55.0" Left="5.0"
+                    Name="Foreground" Opacity="1.0" RadiusX="0.0"
+                    RadiusY="0.0" Stroke="#626469" StrokeDashArray="0.0"
+                    StrokeWidth="1.0" Top="25.0" Width="320.0"/>
+                <Component Clip="False" ContentHeight="15.0"
+                    ContentWidth="50.0" Height="15.0" Left="270.0"
+                    Name="OKButton" Top="35.0" Width="50.0">
+                    <Rectangle Ctrl="buttonCtrl" Fill="#FFFFFF"
+                        Height="15.0" Left="0.0" Model="ok"
+                        Opacity="1.0" RadiusX="2.0" RadiusY="2.0"
+                        Stroke="#000000" StrokeDashArray="0.0"
+                        StrokeWidth="1.0" Top="0.0" Width="50.0">
+                        <LinearGradient Ctrl="buttonGSCtrl"
+                            EndPoint="0.0,1.0" Model="okGS">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <TextBox FontFamily="Arial" FontSize="10.0"
+                        FontStyle="Normal" FontWeight="Normal"
+                        Height="15.0" HorizontalAlign="Center"
+                        Left="0.0" Opacity="1.0" Stroke="#000000"
+                        TextDecoration="None" Top="0.0"
+                        VerticalAlign="Middle" Width="50.0"><![CDATA[OK]]></TextBox>
+                </Component>
+                <Component Clip="False" ContentHeight="15.0"
+                    ContentWidth="50.0" Height="15.0" Left="270.0"
+                    Name="ReleaseButton" Top="55.0" Width="50.0">
+                    <Rectangle Ctrl="buttonCtrl" Fill="#FFFFFF"
+                        Height="15.0" Left="0.0" Model="release"
+                        Opacity="1.0" RadiusX="2.0" RadiusY="2.0"
+                        Stroke="#000000" StrokeDashArray="0.0"
+                        StrokeWidth="1.0" Top="0.0" Width="50.0">
+                        <LinearGradient Ctrl="buttonGSCtrl"
+                            EndPoint="0.0,1.0" Model="releaseGS">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <TextBox FontFamily="Arial" FontSize="10.0"
+                        FontStyle="Normal" FontWeight="Normal"
+                        Height="15.0" HorizontalAlign="Center"
+                        Left="0.0" Opacity="1.0" Stroke="#000000"
+                        TextDecoration="None" Top="0.0"
+                        VerticalAlign="Middle" Width="50.0"><![CDATA[Release]]></TextBox>
+                </Component>
+                <TextBox FontFamily="Arial" FontSize="10.0"
+                    FontStyle="Normal" FontWeight="Normal" Height="20.0"
+                    HorizontalAlign="Right" Left="5.0" Name="TimeLabel"
+                    Opacity="1.0" Stroke="#000000" TextDecoration="None"
+                    Top="30.0" VerticalAlign="Middle" Width="100.0"><![CDATA[Override Time:]]></TextBox>
+                <TextBox FontFamily="Arial" FontSize="10.0"
+                    FontStyle="Normal" FontWeight="Normal" Height="20.0"
+                    HorizontalAlign="Right" Left="5.0" Name="ValueLabel"
+                    Opacity="1.0" Stroke="#000000" TextDecoration="None"
+                    Top="50.0" VerticalAlign="Middle" Width="100.0"><![CDATA[Value:]]></TextBox>
+                <Component Clip="False" ContentHeight="15.0"
+                    ContentWidth="120.0" Height="15.0" Left="115.0"
+                    Name="Time" Top="35.0" Width="120.0">
+                    <Rectangle Fill="#FFFFFF" Height="15.0" Left="0.0"
+                        Name="Background" Opacity="1.0" RadiusX="2.0"
+                        RadiusY="2.0" Stroke="#000000"
+                        StrokeDashArray="0.0" StrokeWidth="1.0"
+                        Top="0.0" Width="120.0">
+                        <LinearGradient EndPoint="0.0,1.0">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <TextBox Ctrl="TimeValueCtrl" FontFamily="Arial"
+                        FontSize="15.0" FontStyle="Normal"
+                        FontWeight="Normal" Height="15.0"
+                        HorizontalAlign="Center" Increment="15"
+                        Left="15.0" Model="timeValue" Name="Value"
+                        Opacity="1.0" Stroke="#000000"
+                        TextDecoration="None" Top="0.0"
+                        VerticalAlign="Middle"
+                            Width="90.0"><![CDATA[---]]><Expose
+                            ExposedAttribute="Increment" Name="TimeIncrement"/>
+                    </TextBox>
+                    <Rectangle Fill="#FFFFFF" Height="14.0" Left="105.5"
+                        Name="PlusBackground" Opacity="1.0"
+                        RadiusX="2.0" RadiusY="2.0" Stroke="None"
+                        StrokeDashArray="0.0" StrokeWidth="1.0" Top=".5" Width="14.0">
+                        <LinearGradient Ctrl="buttonGSCtrl"
+                            EndPoint="0.0,1.0" Model="timePlusBtn">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <Rectangle Fill="#FFFFFF" Height="14.0" Left="0.5"
+                        Name="MinusBackground" Opacity="1.0"
+                        RadiusX="2.0" RadiusY="2.0" Stroke="None"
+                        StrokeDashArray="0.0" StrokeWidth="1.0"
+                        Top="0.5" Width="14.0">
+                        <LinearGradient Ctrl="buttonGSCtrl"
+                            EndPoint="0.0,1.0" Model="timeMinusBtn">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <Line X1="15.0" X2="15.0" Y2="15.0"/>
+                    <Line X1="105.0" X2="105.0" Y1="0.0" Y2="15.0"/>
+                    <Line Stroke="#626469" StrokeWidth="2.0" X1="112.5"
+                        X2="112.5" Y1="3.0" Y2="12.0"/>
+                    <Line Stroke="#626469" StrokeWidth="2.0" X1="108.0"
+                        X2="117.0" Y1="7.5" Y2="7.5"/>
+                    <Line Stroke="#626469" StrokeWidth="2.0" X1="3.0"
+                        X2="12.0" Y1="7.5" Y2="7.5"/>
+                </Component>
+                <Component Clip="False" ContentHeight="15.0"
+                    ContentWidth="120.0" Height="15.0" Left="115.0"
+                    Name="Value" Top="55.0" Width="120.0">
+                    <Component Clip="False" ContentHeight="45.0"
+                        ContentWidth="120.0" Ctrl="ddCtrl" Height="45.0"
+                        Left="0.0" Model="dropdown" Name="dropdown"
+                        Top="0.0" Visibility="Hidden" Width="120.0">
+                        <Rectangle Height="45.0" Left="0.0"
+                            Name="dropdownBgd" RadiusX="2.0"
+                            RadiusY="2.0" Top="0.0" Width="120.0">
+                            <LinearGradient EndPoint="0.0,1.0">
+                                <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                                <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                            </LinearGradient>
+                        </Rectangle>
+                        <TextBox FontFamily="Arial" FontSize="15"
+                            Height="15.0" HorizontalAlign="Center"
+                            Left="0.0" Name="dropdownTxt0" Top="15.0"
+                            VerticalAlign="Middle"
+                                Width="105.0"><![CDATA[Off]]><Expose
+                                ExposedAttribute="Content" Name="State0"/>
+                        </TextBox>
+                        <TextBox FontFamily="Arial" FontSize="15"
+                            Height="15.0" HorizontalAlign="Center"
+                            Left="0.0" Name="dropdownTxt1" Top="30.0"
+                            VerticalAlign="Middle"
+                                Width="105.0"><![CDATA[On]]><Expose
+                                ExposedAttribute="Content" Name="State1"/>
+                        </TextBox>
+                        <Rectangle Ctrl="ddShadowCtrl" Fill="#7F000000"
+                            Height="15.0" Left="0.0"
+                            Model="ddTxt0Shadow"
+                            Name="dropdownTxt0Shadow" Stroke="None"
+                            Top="15.0" Visibility="Hidden" Width="120.0"/>
+                        <Rectangle Ctrl="ddShadowCtrl" Fill="#7F000000"
+                            Height="15.0" Left="0.0"
+                            Model="ddTxt1Shadow"
+                            Name="dropdownTxt1Shadow" Stroke="None"
+                            Top="30.0" Visibility="Hidden" Width="120.0"/>
+                    </Component>
+                    <Rectangle Fill="#FFFFFF" Height="15.0" Left="0.0"
+                        Name="Background" Opacity="1.0" RadiusX="2.0"
+                        RadiusY="2.0" Stroke="#000000"
+                        StrokeDashArray="0.0" StrokeWidth="1.0"
+                        Top="0.0" Width="120.0">
+                        <LinearGradient EndPoint="0.0,1.0">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <TextBox Ctrl="DigitalValueCtrl" FontFamily="Arial"
+                        FontSize="15.0" FontStyle="Normal"
+                        FontWeight="Normal" Height="15.0"
+                        HorizontalAlign="Center" Left="0.0"
+                        Model="valueProp" Name="Value" Opacity="1.0"
+                        State0="Off" State1="On" Stroke="#000000"
+                        TextDecoration="None" Top="0.0"
+                        VerticalAlign="Middle"
+                            Width="105.0"><![CDATA[---]]><Expose
+                            ExposedAttribute="State0" Name="State0"/>
+                        <Expose ExposedAttribute="State1" Name="State1"/>
+                    </TextBox>
+                    <Rectangle Fill="#FFFFFF" Height="14.0" Left="105.5"
+                        Name="ArrowBackground" Opacity="1.0"
+                        RadiusX="2.0" RadiusY="2.0" Stroke="None"
+                        StrokeDashArray="0.0" StrokeWidth="1.0"
+                        Top="0.5" Width="14.0">
+                        <LinearGradient Ctrl="buttonGSCtrl"
+                            EndPoint="0.0,1.0" Model="ddArrowBtn">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#E0E0E0" Offset="1.0"/>
+                        </LinearGradient>
+                    </Rectangle>
+                    <Line X1="105.0" X2="105.0" Y1="0.0" Y2="15.0"/>
+                    <Polygon Fill="#626469"
+                        Points="107.5,6.0 117.5,6.0 112.5,11.0" Stroke="#626469"/>
+                    <TargetArea Height="15.0" Name="ddState0" Top="15.0"
+                        Width="120.0" ddTxt0Shadow_out=""
+                        ddTxt0Shadow_over="" ddTxt0Shadow_up=""
+                        dropdown_up="" valueProp_up=""/>
+                    <TargetArea Height="15.0" Left="0.0" Name="ddState1"
+                        Top="30.0" Width="120.0" ddTxt1Shadow_out=""
+                        ddTxt1Shadow_over="" ddTxt1Shadow_up=""
+                        dropdown_up="" valueProp_up=""/>
+                </Component>
+                <TextBox Ctrl="TitleCtrl" FontFamily="Arial"
+                    FontSize="15.0" FontStyle="Normal"
+                    FontWeight="Normal" Height="25.0"
+                    HorizontalAlign="Center" Left="0.0"
+                    Model="TitleText" Name="Description" Opacity="1.0"
+                    Stroke="#000000" TextDecoration="None" Top="0.0"
+                    VerticalAlign="Middle" Width="330.0"><![CDATA[Description]]></TextBox>
+                <Rectangle Ctrl="cancelCtrl" Fill="None" Height="20.0"
+                    Left="295.0" Model="cancelBtn" Name="CancelBgd"
+                    Stroke="None" Width="30.0"/>
+                <Component Clip="False" ContentHeight="20.0"
+                    ContentWidth="30.0" Height="20.0" Left="295.0"
+                    Name="Cancel" Top="0.0" Width="30.0">
+                    <Line Ctrl="cancelLineCtrl" Model="cancelLine1"
+                        Opacity="1.0" Stroke="#626469"
+                        StrokeDashArray="0.0" StrokeWidth="2.0"
+                        X1="10.0" X2="20.0" Y1="6.0" Y2="14.0"/>
+                    <Line Ctrl="cancelLineCtrl" Model="cancelLine2"
+                        Opacity="1.0" Stroke="#626469"
+                        StrokeDashArray="0.0" StrokeWidth="2.0"
+                        X1="10.0" X2="20.0" Y1="14.0" Y2="6.0"/>
+                </Component>
+                <TargetArea Height="25.0" Name="Header" Width="330.0"
+                    properties_down="" properties_move="" properties_up=""/>
+                <TargetArea Height="15.0" Left="270.0" Name="OK"
+                    Top="35.0" Width="50.0" dropdown_up="" okGS_down=""
+                    okGS_out="" okGS_up="" properties_up=""/>
+                <TargetArea Height="15.0" Left="270.0" Name="Release"
+                    Top="55.0" Width="50.0" constantBgd_up=""
+                    dropdown_up="" infinity_up="" releaseGS_down=""
+                    releaseGS_out="" releaseGS_up="" release_up=""/>
+                <TargetArea Height="20.0" Left="295.0" Name="Cancel"
+                    Top="0.0" Width="30.0" cancelBtn_out=""
+                    cancelBtn_over="" cancelLine1_out=""
+                    cancelLine1_over="" cancelLine2_out=""
+                    cancelLine2_over="" dropdown_up="" properties_up=""/>
+                <TargetArea Height="15.0" Left="220.0" Name="TimeUp"
+                    Top="35.0" Width="15.0" timePlusBtn_down=""
+                    timePlusBtn_out="" timePlusBtn_up="" timeValue_up=""/>
+                <TargetArea Height="15.0" Left="115.0" Name="TimeDown"
+                    Top="35.0" Width="15.0" timeMinusBtn_down=""
+                    timeMinusBtn_out="" timeMinusBtn_up="" timeValue_up=""/>
+                <TargetArea Height="15.0" Left="130.0" Name="OvTim"
+                    Top="35.0" Width="90.0" timeValue_up=""/>
+                <TargetArea Height="15.0" Left="115.0" Name="DV"
+                    Top="55.0" Width="105.0" dropdown_up="" valueProp_up=""/>
+                <TargetArea Height="15.0" Left="220.0" Name="Dropdown"
+                    Top="55.0" Width="15.0" ddArrowBtn_down=""
+                    ddArrowBtn_out="" ddArrowBtn_up="" dropdown_up=""/>
+            </Component>
+        </Group>
+        <Script OnDocumentLoad="load" OnMouseClick="click"
+            OnMouseDown="down" OnMouseMove="move" OnMouseOut="out"
+            OnMouseOver="over" OnMouseUp="up" OnSignalChange="change"><![CDATA[/**==========================================================================================
+ * Main Object
+ * This is a consolidated event distributor
+ */
+var Main = {
+	// load function this executes when the component is loaded
+	load: function(e) {
+		var comp = e.getCurrentTarget(),
+			children = getChildrenByAttribute(comp, "Model"); // list of all components with the attribute Model
+		
+		// create all models that are found and tie them to the associated control object
+		this.models = {};
+		for(var i = 0, max = children.length; i < max; i += 1) {
+			var child = children[i],
+				model = child.getAttribute("Model"),
+				ctrl = String(child.getAttribute("Ctrl"));
+			this.models[model] = Object.create(eval(ctrl));
+			this.models[model].init(child);							
+		}
+	},
+	
+	// on a change evnet distribute the event to all models defined in custom attributes
+	change: function(e) {
+		e.preventDefault();
+		var attbList = e.getTarget().attributes;
+		
+		for(var i = 0, max = attbList.length; i < max; i += 1) {
+			var attb = attbList.item(i).nodeName;
+			if(this.models.hasOwnProperty(attb)) {
+				this.models[attb].update(e);
+			}
+		}
+	},
+	
+	mouse: function(e, action) {
+		if(action === "click" || action === "down") {
+			e.preventDefault();
+		}	
+		var trigger = e.getTarget(),
+		attbList = trigger.attributes;
+	
+		for(var i = 0, max = attbList.length; i < max; i += 1) {
+			var attb = String(attbList.item(i).nodeName).split("_")[0],
+				event = String(attbList.item(i).nodeName).split("_")[1];
+			if(event === action) {
+				if(this.models.hasOwnProperty(attb)) {
+					if(!isUndefined(this.models[attb][action])) {
+						this.models[attb][action](e);
+					}
+				}
+			}
+		}
+	}
+};
+
+var bm = {
+	change: function(e) {
+		var target = e.getTarget();
+		var name = target.getAttribute("Name");
+		if(!this.hasOwnProperty(name)) {
+			this[name] = Object.create(Bind);
+			this[name].init(target);
+		}
+	}
+};
+
+/**==========================================================================================
+ * Event Callback Functions
+ * pass all events to main object for distribution
+ */
+
+function load(evt){	
+	Main.load(evt);
+}
+
+function change(evt) {	
+	Main.change(evt);
+	bm.change(evt);
+}
+
+function click(evt) {
+	Main.mouse(evt, "click");
+}
+
+function up(evt) {
+	Main.mouse(evt, "up");
+}
+
+function over(evt) {
+	Main.mouse(evt, "over");
+}
+
+function out(evt) {
+	Main.mouse(evt, "out");
+}
+
+function down(evt) {
+	Main.mouse(evt, "down");
+}
+
+function move(evt) {
+	Main.mouse(evt, "move");
+}
+
+/**==========================================================================================
+ * Helper Functions
+ */
+var isUndefined = function(o) {
+	if(typeof(o) === "undefined") {
+		return true;			
+	}
+	return false;	
+};
+
+var getBool = function(s) {
+	switch(String(s).toLowerCase().trim()){
+		case "true": case "yes": case "y": case "1": case "t": case "on": case "active": return true;
+		default: return false;
+	}
+};
+
+//checks if object is of type undefined
+if (!Object.isUndefined) {
+	Object.isUndefined = function(object) {
+		return typeof object === "undefined";
+	};
+}
+
+//checks if object is part of DOM, should only be used on nodes (good to check against CDATA)
+if (!Object.isDOM) {
+	Object.isDOM = function(obj) {
+		if (!Object.isUndefined(obj) && obj.nodeName) {
+	    	switch (obj.nodeType) {
+	    		case 1: return 'element';
+	    		case 3: return (/\S/).test(obj.nodeValue) ? 'textnode' : 'whitespace';
+	    	}
+	    }
+	    return false;
+	};
+}
+
+//returns an array children nodes that have a defined attribute, ex: getChildrenByAttribute(view,"Model")
+var getChildrenByAttribute = function(node, attb){
+	var v = [];
+	if (Object.isDOM(node)) {
+		if (node.hasAttribute(attb)) {
+			if (node.getAttribute(attb)!="") {			
+				v.push(node);
+			}
+		}
+		if (node.hasChildNodes()) {
+			var c = node.getChildNodes();			
+			for(var i = 0; i < c.length; i++) {
+				v = v.concat(getChildrenByAttribute(c.item(i), attb));
+			}
+		}
+	}
+	return v;
+}
+
+if (!Object.create) {
+	Object.create = function(base) {
+		function F () {};
+		F.prototype = base;
+		return new F();
+	};
+}
+ 
+
+/**==========================================================================================
+ * Analog Control
+ */
+var AnalogValueCtrl = {
+	init: function(node) {
+		this.decimals = 0;
+		this.units = "";
+		this.prefix = "";
+		this.suffix = "";
+		this.showUnits = true;
+		this.value = 0;
+		this.increment = 0.5;
+		
+		this.node = node;
+		
+		if(node.hasAttribute("Decimals")) {		
+			this.decimals = +node.getAttribute("Decimals");
+		}
+					
+		if(node.hasAttribute("Prefix")) {		
+			this.prefix = String(node.getAttribute("Prefix"));
+		}
+		
+		if(node.hasAttribute("Suffix")) {		
+			this.suffix = String(node.getAttribute("Suffix"));
+		}
+		
+		if(node.hasAttribute("ShowUnits")) {		
+			this.showUnits = getBool(node.getAttribute("ShowUnits"));
+		}
+		
+		if(node.hasAttribute("Increment")) {		
+			this.increment = +node.getAttribute("Increment");
+		}
+		
+		this.naValue = 20000;
+		this.units = "";
+	},
+	update: function(e) {		
+		var targetName = String(e.getTarget().getAttribute("Name"));
+
+		if(targetName === "DftAVPar") {
+			this.naValue = +e.getValue();
+		}
+		
+		if(targetName === "AV") {
+			this.value = +e.getValue();
+			this.units = String(e.getUnit());
+		}
+		
+		this.render();
+	},
+	
+	up: function(e) {
+		var targetName = String(e.getTarget().getAttribute("Name"));
+		if(targetName === "AV") {
+			if(!this.constant && bm.hasOwnProperty("AV")) {
+				bm["AV"].displayProperties();
+			}
+		}
+		
+		if(targetName === "ValueUp") {
+			if(bm.hasOwnProperty("AV")) {
+				this.value += this.increment;
+				bm["AV"].write(this.value);
+				this.render();
+			}
+		}
+		if(targetName === "ValueDown") {
+			if(bm.hasOwnProperty("AV")) {
+				this.value = Math.max(this.value - this.increment, 0);
+				bm["AV"].write(this.value);
+				this.render();
+			}
+		}
+	},
+	
+	render: function() {
+		if(this.value !== this.naValue) {	
+			this.node.setAttribute("Content", this.prefix + this.value.toFixed(this.decimals) + this.suffix + (this.showUnits ? " " + this.units : ""));
+		} else {
+			this.node.setAttribute("Content", "NA");
+		}
+	}
+};
+
+/**==========================================================================================
+ * Digital Control
+ */
+var DigitalValueCtrl = {
+	init: function(node) {
+		this.states = [];
+		this.content = "---";
+		
+		this.node = node;
+				
+		i = 2;
+		while(i--) {
+			this.states[i] = String(node.getAttribute("State" + i));
+		}		
+	},
+	update: function(e) {
+		var val = e.getValue();
+		if(val === null) {
+			this.content = "NA";
+		} else {	
+			this.content = getBool(val) ? this.states[1] : this.states[0];
+		}
+		this.render();
+	},
+	
+	up: function(e) {
+		var targetName = String(e.getTarget().getAttribute("Name"));
+		if(targetName === "DV") {
+			if(!this.constant && bm.hasOwnProperty("DV")) {
+				bm["DV"].displayProperties();
+			}
+		}
+		
+		if(targetName === "ddState0") {
+			if(bm.hasOwnProperty("DV")) {
+				this.content = this.states[0];
+				bm["DV"].write(false);
+				this.render();
+			}
+		}
+		if(targetName === "ddState1") {
+			if(bm.hasOwnProperty("DV")) {
+				this.content = this.states[1];
+				bm["DV"].write(true);
+				this.render();
+			}
+		}
+	},
+	
+	render: function() {
+		this.node.setAttribute("Content", this.content);
+	}
+};
+
+/**==========================================================================================
+ * Time Control
+ */
+var TimeValueCtrl = {
+	init: function(node) {
+		this.value = 0;
+		
+		this.node = node;
+		this.increment = 15;
+		
+		if(node.hasAttribute("Increment")) {		
+			this.increment = +node.getAttribute("Increment");
+		}
+	},
+	update: function(e) {
+		this.value = +e.getValue();
+		this.render();
+	},
+	
+	up: function(e) {
+		var targetName = String(e.getTarget().getAttribute("Name"));
+		if(targetName === "OvTim") {
+			if(bm.hasOwnProperty(targetName)) {
+				bm[targetName].displayProperties();
+			}
+		}
+		if(targetName === "TimeUp") {
+			if(bm.hasOwnProperty("OvTim")) {
+				this.value += this.increment;
+				bm["OvTim"].write(this.value);
+				this.render();
+			}
+		}
+		if(targetName === "TimeDown") {
+			if(bm.hasOwnProperty("OvTim")) {
+				this.value = Math.max(this.value - this.increment, 0);
+				bm["OvTim"].write(this.value);
+				this.render();
+			}
+		}
+	},
+	
+	render: function(e) {
+		var min = Math.floor(this.value);
+		var decValue = this.value % 1;
+		var sec = Math.floor(decValue * 60);
+		if(sec < 10) {
+			sec = "0" + sec;
+		}
+		this.node.setAttribute("Content", min + ":" + sec + " min");
+	},
+};
+
+
+/**==========================================================================================
+ * Text Control
+ */
+var TextCtrl = {
+	init: function(node) {
+		this.node = node;		
+	},
+	update: function(e) {
+		this.node.setAttribute("Content", String(e.getValue()));
+	}
+};
+
+/**==========================================================================================
+ * Title Control
+ */
+var TitleCtrl = {
+	init: function(node) {
+		this.node = node;		
+		this.name = node.getParentNode().getParentNode().getParentNode().getAttribute("Name");
+	},
+	update: function(e) {
+		var content = this.name;
+		var value = String(e.getValue());
+		if(value !== "") {
+			content = value + " : " + content;
+		}
+		this.node.setAttribute("Content", content);		
+	}
+};
+
+/**==========================================================================================
+ * Forced Icon Control
+ */
+var ForceCtrl = {
+	init: function(node) {
+		this.node = node;		
+	},
+	update: function(e) {
+		var sts = +e.getStatus();
+		this.node.setAttribute("Visibility", sts === 3 ? "Visible" : "Hidden");
+	}
+};
+
+/**==========================================================================================
+ * Background Control
+ */
+var BgdCtrl = {
+	init: function(node) {
+		this.node = node;
+		this.normalStroke = this.node.getAttribute("Stroke");
+		this.normalStrokeWidth = this.node.getAttribute("StrokeWidth");				
+		this.forcedStroke = this.node.getAttribute("Color");
+		this.forcedStrokeWidth = this.node.getAttribute("ForceStrokeWidth");
+	},
+	update: function(e) {
+		var sts = +e.getStatus();
+		this.node.setAttribute("Stroke", sts === 3 ? this.forcedStroke : this.normalStroke);
+		this.node.setAttribute("StrokeWidth", sts === 3 ? this.forcedStrokeWidth : this.normalStrokeWidth);
+	}
+};
+
+/**==========================================================================================
+ * Button Control
+ */
+var buttonCtrl = {
+	init: function(node) {
+	},
+	
+	up: function(e) {
+		var targetName = String(e.getTarget().getAttribute("Name"));
+		if(targetName === "Release") {
+			if(bm.hasOwnProperty("DV")) {
+				bm["DV"].unForce();
+			}
+		}
+	}
+};
+
+/**==========================================================================================
+ * Button Gradient Control
+ */
+var buttonGSCtrl = {
+	init: function(node) {
+		var gsList = node.getElementsByTagName("GradientStop");
+		this.gs0 = gsList.item(0);
+		this.gs0Color = String(this.gs0.getAttribute("Color"));
+		this.gs1 = gsList.item(1);
+		this.gs1Color = String(this.gs1.getAttribute("Color"));
+	},
+	
+	up: function(e) {
+		this.gs0.setAttribute("Color", this.gs0Color);
+		this.gs1.setAttribute("Color", this.gs1Color);
+	},
+	
+	down: function(e) {
+		this.gs0.setAttribute("Color", this.gs1Color);
+		this.gs1.setAttribute("Color", this.gs0Color);
+	},
+	
+	out: function(e) {
+		this.gs0.setAttribute("Color", this.gs0Color);
+		this.gs1.setAttribute("Color", this.gs1Color);
+	}
+};
+
+/**==========================================================================================
+ * Cancel Control
+ */
+var cancelCtrl = {
+	init: function(node) {
+		this.node = node;
+	},
+	
+	over: function(e) {
+		this.node.setAttribute("Fill", "#E00000");
+	},
+	
+	out: function(e) {
+		this.node.setAttribute("Fill", "None");
+	}
+};
+
+/**==========================================================================================
+ * Cancel Line Control
+ */
+var cancelLineCtrl = {
+	init: function(node) {
+		this.node = node;
+	},
+	
+	over: function(e) {
+		this.node.setAttribute("Stroke", "#FFFFFF");
+	},
+	
+	out: function(e) {
+		this.node.setAttribute("Stroke", "#626469");
+	}
+};
+
+/**==========================================================================================
+ * Dropdown Control
+ */
+var ddCtrl = {
+	init: function(node) {
+		this.node = node;
+		this.active = false;
+	},
+	
+	up: function(e) {
+		var targetName = String(e.getTarget().getAttribute("Name"));
+		if(targetName === "Dropdown") {
+			this.active = !this.active;
+		} else {
+			this.active = false;
+		}
+		this.node.setAttribute("Visibility", this.active ? "Visible" : "Hidden");
+	}
+};
+
+/**==========================================================================================
+ * Dropdown Shadow Control
+ */
+var ddShadowCtrl = {
+	init: function(node) {
+		this.node = node;
+	},
+	
+	up: function(e) {
+		this.node.setAttribute("Visibility", "Hidden");
+	},
+	
+	over: function(e) {
+		this.node.setAttribute("Visibility", "Visible");
+	},
+	
+	out: function(e) {
+		this.node.setAttribute("Visibility", "Hidden");
+	},
+};
+
+/**==========================================================================================
+ * Properties Control
+ */
+var propertiesCtrl = {
+	init: function(node) {
+		this.node = node;
+		this.drag = false;
+		this.oldX = 0;
+		this.oldY = 0;
+		this.top = 0;
+		this.left = 0;
+	},
+	up: function(e) {
+		var targetName = String(e.getTarget().getAttribute("Name"));
+		
+		switch(targetName) {
+		case "Properties":
+			this.node.setAttribute("Visibility", "Visible");
+			this.left = +e.getCurrentTargetX();
+			this.top = +e.getCurrentTargetY();
+			this.node.setAttribute("Left", this.left);
+			this.node.setAttribute("Top", this.top);
+			break;
+		case "Header":
+			this.drag = false;
+			break;
+		case "OK":
+		case "Cancel":
+		case "Release":
+			this.node.setAttribute("Visibility", "Hidden");
+			break;
+		default:
+		}
+	},
+	move: function(e) {
+		if(this.drag === true) {
+			var xPos = +e.getCurrentTargetX();
+			var yPos = +e.getCurrentTargetY();
+			this.left = this.left + (xPos - this.oldX);
+			this.top = this.top + (yPos - this.oldY);
+			this.node.setAttribute("Left", this.left);
+			this.node.setAttribute("Top", this.top);
+			this.oldX = xPos;
+			this.oldY = yPos;
+		}
+		
+	},
+	down: function(e) {
+		this.drag = true;
+		this.oldX = +e.getCurrentTargetX();
+		this.oldY = +e.getCurrentTargetY();
+		this.left = +this.node.getAttribute("Left");
+		this.top = +this.node.getAttribute("Top");
+	}
+};
+
+/**==========================================================================================
+ * Bind Object
+ */
+var Bind = {
+	init: function(node) {
+		this.node = node;
+		if(this.node) {
+			this.fbn = this.node.getFullBindName();
+			this.name = String(this.node.getAttribute("Name"));
+		}
+	},
+	enableUpdates: function(){
+		try {
+			if(this.node) {
+				this.node.setAttribute("DynamicUpdates", "Enable");
+			}
+		}
+		catch(err) {
+		}
+	},
+	disableUpdates: function() {
+		try {
+			if(this.node) {
+				this.node.setAttribute("DynamicUpdates", "Disable");
+			}
+		}
+		catch(err) {
+		}
+	},
+	displayProperties: function() {
+		if(this.fbn) {
+			invoke(this.fbn,"EditProperties");
+		}
+	},
+	relinquish: function() {
+		try {
+			if(this.fbn) {
+				setValue(this.fbn,null);	
+			}
+		}
+		catch(err) {
+		}
+	},
+	write: function(val) {
+		try {
+			if(this.fbn) {
+				setValue(this.fbn, val);
+			}
+		}
+		catch(err) {
+		}
+	},
+	unForce: function() {
+		setForce(this.fbn, false);
+	}
+};]]></Script>
+    </Component>
+</Tgml>
